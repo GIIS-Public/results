@@ -1,0 +1,988 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Nepal Election</title>
+            <link rel="stylesheet" type="text/css" href="css/index.css"  />
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body style="overflow-x:hidden">
+        <div class="row" style="margin-top:1rem;" >
+            <div class="col-md-2">
+                <div class="overall_div">
+                    <h3>Overall Results</h3>
+                  
+                </div>
+                
+            </div>
+            
+            <div class="col-md-10 overall_bar_div">
+                <div class="progress_bar_div">
+                    <div class="progress_bar">
+                        <div class="inner_bar" style="width:30%;background:#dd4646"></div>
+                        <div class="inner_bar" style="width:49.25%;background:#215939"></div>
+                        <div class="inner_bar" style="width:18%;background:#528cbf"></div>
+                        <div class="inner_bar" style="width:5%;background:#64cef4"></div>
+                    </div>
+                    <div class="progress_bar_info">
+                        <div class="inner_bar_info" style="width:30%;">
+                            <span class="party_name"></span>
+                            <span class="number">205</span>
+                        </div>
+                         <div class="inner_bar_info" style="width:49.25%;">
+                            <span class="party_name"></span>
+                            <span class="number">329</span>
+                        </div>
+                         <div class="inner_bar_info" style="width:18%;">
+                            <span class="party_name"></span>
+                            <span class="number">121</span>
+                        </div>
+                         <div class="inner_bar_info" style="width:0.022%;">
+                            <span class="party_name"></span>
+                            <span class="number">13</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- <style>
+                .box{
+                    f
+                }
+            </style> -->
+
+            </div>
+        </div>
+        <div class="provinces_div">
+                <div class="chart_actions">
+                    <ul class="nav nav-pills">
+                        <li class="active"><a data-toggle="pill" href="#menu1">Province 1</a></li>
+                        <li ><a data-toggle="pill" href="#menu2">Province 2</a></li>
+                        <li ><a data-toggle="pill" href="#menu3">Province 3</a></li>
+                        <li ><a data-toggle="pill" href="#menu4">Province 4</a></li>
+                        <li ><a data-toggle="pill" href="#menu5">Province 5</a></li>
+                        <li ><a data-toggle="pill" href="#menu6">Province 6</a></li>
+                        <li ><a data-toggle="pill" href="#menu7">Province 7</a></li>
+                    </ul>
+                </div>
+    
+    
+                <div class="tab-content" style="margin-top:2rem">
+                    <div id="menu1" class="tab-pane fade in active">
+                        <div class="row ">
+                            <div class="col-md-2 province_bar_div" >
+                                    Mayor/ Chairman
+                            </div>
+                            <div class="col-md-10">
+                                <div class="progress_bar_div">
+                                    <div class="progress_bar">
+                                        <div class="inner_bar_mini" style="width:34.30%;background:#dd4646"></div>
+                                        <div class="inner_bar_mini" style="width:50.36%;background:#215939"></div>
+                                        <div class="inner_bar_mini" style="width:12%;background:#528cbf"></div>
+                                        <div class="inner_bar_mini" style="width:4%;background:#64cef4"></div>
+                                    </div>
+                                    <div class="progress_bar_info">
+                                        <div class="inner_bar_info" style="width:34.30%;">
+                                            <span class="number">47</span>
+                                        </div>
+                                            <div class="inner_bar_info" style="width:50.36%;">
+                                            <span class="number">69</span>
+                                        </div>
+                                            <div class="inner_bar_info" style="width:12%;">
+                                            <span class="number">12</span>
+                                        </div>
+                                            <div class="inner_bar_info" style="width:7%;">
+                                            <span class="number">3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row " >
+                            <div class="col-md-2 province_bar_div" >
+                                Vice-Mayor/ Chairman
+                            </div>
+                            <div class="col-md-10">
+                                <div class="progress_bar_div">
+                                    <div class="progress_bar">
+                                        <div class="inner_bar_mini" style="width:49%;background:#dd4646"></div>
+                                        <div class="inner_bar_mini" style="width:36%;background:#215939"></div>
+                                        <div class="inner_bar_mini" style="width:15%;background:#528cbf"></div>
+                                        <div class="inner_bar_mini" style="width:0%;background: #64cef4"></div>
+                                    </div>
+                                    <div class="progress_bar_info">
+                                        <div class="inner_bar_info" style="width:49%;">
+                                            <span class="number">63</span>
+                                        </div>
+                                            <div class="inner_bar_info" style="width:36%;">
+                                            <span class="number">46</span>
+                                        </div>
+                                            <div class="inner_bar_info" style="width:15%;">
+                                            <span class="number">19</span>
+                                        </div>
+                                            <div class="inner_bar_info" style="width:0%;">
+                                            <span class="number"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-2 province_bar_div" >
+                                    WP
+                            </div>
+                            <div class="col-md-10">
+                                <div class="progress_bar_div">
+                                    <div class="progress_bar">
+                                        <div class="inner_bar_mini" style="width:43.31%;background:#dd4646"></div>
+                                        <div class="inner_bar_mini" style="width:43%;background:#215939"></div>                                                                     
+                                        <div class="inner_bar_mini" style="width:11%;background:#528cbf"></div>
+                                        <div class="inner_bar_mini" style="width:3%;background:#64cef4 "></div>
+                                    </div>
+                                    <div class="progress_bar_info">
+                                        <div class="inner_bar_info" style="width:43.31%;">
+                                            <span class="number">476</span>
+                                        </div>
+                                            <div class="inner_bar_info" style="width:43%;">
+                                            <span class="number">470</span>
+                                        </div>
+                                            <div class="inner_bar_info" style="width:11%;">
+                                            <span class="number">127</span>
+                                        </div>
+                                            <div class="inner_bar_info" style="width:3%;">
+                                            <span class="number">26</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row ">
+                            <div class="col-md-2 province_bar_div" >
+                                    WP
+                            </div>
+                            <div class="col-md-10">
+                                <div class="progress_bar_div">
+                                    <div class="progress_bar">
+                                        <div class="inner_bar_mini" data-trigger="hover" data-toggle="popover" style="width:30%;background:red"></div>
+                                        <div class="inner_bar_mini" style="width:20%;background:blue"></div>
+                                        <div class="inner_bar_mini" style="width:20%;background:green"></div>
+                                        <div class="inner_bar_mini" style="width:30%;background:yellow"></div>
+                                    </div>
+                                    <div class="progress_bar_info">
+                                        <div class="inner_bar_info" style="width:30%;">
+                                            <span class="number">246</span>
+                                        </div>
+                                            <div class="inner_bar_info" style="width:20%;">
+                                            <span class="number">246</span>
+                                        </div>
+                                            <div class="inner_bar_info" style="width:20%;">
+                                            <span class="number">246</span>
+                                        </div>
+                                            <div class="inner_bar_info" style="width:30%;">
+                                            <span class="number">246</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                            
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                        <div id="menu1" class="tab-pane fade in active">
+                            <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                        Mayor/ Chairman
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:35%;background:#dd4646"></div>
+                                            <div class="inner_bar_mini" style="width:52%;background:#215939"></div>
+                                            <div class="inner_bar_mini" style="width:11%;background:#528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:2%;background: #64cef4"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:35%;">
+                                                <span class="number">30</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:52%;">
+                                                <span class="number">46</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:11%;">
+                                                <span class="number">9</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:2%;">
+                                                <span class="number">2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row " >
+                                <div class="col-md-2 province_bar_div" >
+                                        vice Mayor/ Chairman
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:30%;background:#dd4646 "></div>
+                                            <div class="inner_bar_mini" style="width:60%;background:#215939"></div>
+                                            <div class="inner_bar_mini" style="width:8%;background:#528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:2%;background:#64cef4"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:30%;">
+                                                <span class="number">27</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:60%;">
+                                                <span class="number">56</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:8%;">
+                                                <span class="number">9</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:2%;">
+                                                <span class="number">1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                        WP
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:33%;background:#dd4646"></div>
+                                            <div class="inner_bar_mini" style="width:50%;background:#215939"></div>
+                                            <div class="inner_bar_mini" style="width:12%;background:#528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:9%;background: #64cef4"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:33%;">
+                                                <span class="number">274</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:50%;">
+                                                <span class="number">418</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:12%;">
+                                                <span class="number">139</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:9%;">
+                                                <span class="number">19</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                        Mayor/ Chairman
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" data-trigger="hover" data-toggle="popover" style="width:30%;background:red"></div>
+                                            <div class="inner_bar_mini" style="width:20%;background:blue"></div>
+                                            <div class="inner_bar_mini" style="width:20%;background:green"></div>
+                                            <div class="inner_bar_mini" style="width:30%;background:yellow"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:30%;">
+                                                <span class="number">57(uml)</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:20%;">
+                                                <span class="number">53(congress)</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:20%;">
+                                                <span class="number">20(mao)</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:30%;">
+                                                <span class="number">32(indipen)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                                
+                        </div>
+                    </div>
+                    <div id="menu3" class="tab-pane fade">
+                        <div id="menu1" class="tab-pane fade in active">
+                            <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                        Mayor/ Chairman
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:24%;background:#dd4646"></div>
+                                            <div class="inner_bar_mini" style="width:53%;background:#215939"></div>
+                                            <div class="inner_bar_mini" style="width:25%;background:#528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:0.9%;background:#64cef4"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:24%;">
+                                                <span class="number">26</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:53%;">
+                                                <span class="number">58</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:25%;">
+                                                <span class="number">25</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:1%;">
+                                                <span class="number">1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row " >
+                                <div class="col-md-2 province_bar_div" >
+                                        Vice Mayor
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:30%;background:#dd4646 "></div>
+                                            <div class="inner_bar_mini" style="width:47%;background:#215939"></div>
+                                            <div class="inner_bar_mini" style="width:28%;background:#528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:0%;background: #64cef4"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:30%;">
+                                                <span class="number">34</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:47%;">
+                                                <span class="number">50</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:28%;">
+                                                <span class="number">27</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:0%;">
+                                                <span class="number"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                        WP
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:34%;background:#dd4646"></div>
+                                            <div class="inner_bar_mini" style="width:46%;background:#215939"></div>
+                                            <div class="inner_bar_mini" style="width:19%;background:#528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:2%;background: #64cef4"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:34%;">
+                                                <span class="number">359</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:46%;">
+                                                <span class="number">488</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:19%;">
+                                                <span class="number">204</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:2%;">
+                                                <span class="number">18</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                        May
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" data-trigger="hover" data-toggle="popover" style="width:30%;background:red"></div>
+                                            <div class="inner_bar_mini" style="width:20%;background:blue"></div>
+                                            <div class="inner_bar_mini" style="width:20%;background:green"></div>
+                                            <div class="inner_bar_mini" style="width:30%;background:yellow"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:30%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:20%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:20%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:30%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                                
+                        </div>
+                    </div>
+                    <div id="menu4" class="tab-pane fade">
+                        <div id="menu1" class="tab-pane fade in active">
+                            <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                       Mayor/ Chairman
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:43%;background:#dd4646"></div>
+                                            <div class="inner_bar_mini" style="width:44%;background:#215939"></div>
+                                            <div class="inner_bar_mini" style="width:14%;background:#528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:0%;background: #64cef4"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:43%;">
+                                                <span class="number">35</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:44%;">
+                                                <span class="number">36</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:14%;">
+                                                <span class="number">11</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:0%;">
+                                                <span class="number"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row " >
+                                <div class="col-md-2 province_bar_div" >
+                                       Vice-mayor
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:40%;background:#dd4646"></div>
+                                            <div class="inner_bar_mini" style="width:37%;background:#215939"></div>
+                                            <div class="inner_bar_mini" style="width:23%;background:#528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:1%;background:#64cef4 "></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:40%;">
+                                                <span class="number">33</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:37%;">
+                                                <span class="number">31</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:23%;">
+                                                <span class="number">19</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:1%;">
+                                                <span class="number">1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                        WP
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:38%;background:#dd4646"></div>
+                                            <div class="inner_bar_mini" style="width:47%;background:#215939"></div>
+                                            <div class="inner_bar_mini" style="width:12%;background:#528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:4%;background:#64cef4"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:38%;">
+                                                <span class="number">284</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:47%;">
+                                                <span class="number">351</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:12%;">
+                                                <span class="number">89</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:4%;">
+                                                <span class="number">18</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                        Ma man
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" data-trigger="hover" data-toggle="popover" style="width:30%;background:red"></div>
+                                            <div class="inner_bar_mini" style="width:20%;background:blue"></div>
+                                            <div class="inner_bar_mini" style="width:20%;background:green"></div>
+                                            <div class="inner_bar_mini" style="width:30%;background:yellow"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:30%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:20%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:20%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:30%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                                
+                        </div>
+                    </div>
+                    <div id="menu5" class="tab-pane fade">
+                        <div id="menu1" class="tab-pane fade in active">
+                            <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                        Mayor/ Chairman
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:27%;background:#dd4646"></div>
+                                            <div class="inner_bar_mini" style="width:48%;background:#215939"></div>
+                                            <div class="inner_bar_mini" style="width:25%;background:#528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:0%;background:#64cef4"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:27%;">
+                                                <span class="number">27</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:48%;">
+                                                <span class="number">48</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:20%;">
+                                                <span class="number">25</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:0%;">
+                                                <span class="number"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row " >
+                                <div class="col-md-2 province_bar_div" >
+                                        Vice Mayor/ Chairman
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:40%;background:#dd4646"></div>
+                                            <div class="inner_bar_mini" style="width:44%;background:#215939"></div>
+                                            <div class="inner_bar_mini" style="width:20%;background:#528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:0%;background:#64cef4"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:40%;">
+                                                <span class="number">40</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:44%;">
+                                                <span class="number">44</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:20%;">
+                                                <span class="number">15</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:0%;">
+                                                <span class="number"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                       WP
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:36%;background: #dd4646"></div>
+                                            <div class="inner_bar_mini" style="width:43%;background:  #215939"></div>
+                                            <div class="inner_bar_mini" style="width:20%;background: #528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:4%;background:#64cef4"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:36%;">
+                                                <span class="number">314</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:43%;">
+                                                <span class="number">375</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:20%;">
+                                                <span class="number">170</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:4%;">
+                                                <span class="number">13</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                        Ma man
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" data-trigger="hover" data-toggle="popover" style="width:30%;background:red"></div>
+                                            <div class="inner_bar_mini" style="width:20%;background:blue"></div>
+                                            <div class="inner_bar_mini" style="width:20%;background:green"></div>
+                                            <div class="inner_bar_mini" style="width:30%;background:yellow"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:30%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:20%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:20%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:30%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                                
+                        </div>
+                    </div>
+                    <div id="menu6" class="tab-pane fade">
+                        <div id="menu1" class="tab-pane fade in active">
+                            <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                        Mayor/ Chairman
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:20%;background:#dd4646"></div>
+                                            <div class="inner_bar_mini" style="width:43%;background:#215939"></div>
+                                            <div class="inner_bar_mini" style="width:34%;background: #528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:4%;background:#64cef4"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:20%;">
+                                                <span class="number">15</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:43%;">
+                                                <span class="number">32</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:34%;">
+                                                <span class="number">23</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:4%;">
+                                                <span class="number">5</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row " >
+                                <div class="col-md-2 province_bar_div" >
+                                       Vice Mayor/ Chairman
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:28%;background:#dd4646"></div>
+                                            <div class="inner_bar_mini" style="width:37%;background:#215939"></div>
+                                            <div class="inner_bar_mini" style="width:34%;background: #528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:3%;background:#64cef4"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:28%;">
+                                                <span class="number">20</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:37%;">
+                                                <span class="number">27</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:34%;">
+                                                <span class="number">25</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:3%;">
+                                                <span class="number">1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                        WP
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:27%;background:#dd4646"></div>
+                                            <div class="inner_bar_mini" style="width:37%;background:#215939"></div>
+                                            <div class="inner_bar_mini" style="width:44%;background: #528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:3%;background: #64cef4"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:27%;">
+                                                <span class="number">184</span>
+                                            </div>
+                                                <div  class="inner_bar_info" style="width:37%;">
+                                                <span class="number">253</span>
+                                            </div>
+                                                <div  class="inner_bar_info" style="width:40%;">
+                                                <span class="number">223</span>
+                                            </div>
+                                                <div  class="inner_bar_info" style="width:3%;">
+                                                <span class="number">20</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                        May
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" data-trigger="hover" data-toggle="popover" style="width:30%;background:red"></div>
+                                            <div class="inner_bar_mini" style="width:20%;background:blue"></div>
+                                            <div class="inner_bar_mini" style="width:20%;background:green"></div>
+                                            <div class="inner_bar_mini" style="width:30%;background:yellow"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:30%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:20%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:20%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:30%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                                
+                        </div>
+                    </div>
+                    <div id="menu7" class="tab-pane fade">
+                        <div id="menu1" class="tab-pane fade in active">
+                            <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                        Mayor/ Chairman
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:30%;background:#dd4646"></div>
+                                            <div class="inner_bar_mini" style="width:50%;background:#215939"></div>
+                                            <div class="inner_bar_mini" style="width:18%;background:#528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:8%;background: #64cef4"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:30%;">
+                                                <span class="number">25</span>
+                                            </div>
+                                            <div class="inner_bar_info" style="width:50%;">
+                                                <span class="number">40</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:18%;">
+                                                <span class="number">14</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:0.024%;">
+                                                <span class="number">2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row " >
+                                <div class="col-md-2 province_bar_div" >
+                                        Vice Mayor/ Chairman
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:29%;background:#dd4646"></div>
+                                            <div class="inner_bar_mini" style="width:53%;background:#215939"></div>
+                                            <div class="inner_bar_mini" style="width:20%;background:#528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:2%;background: #64cef4"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:30%;">
+                                                <span class="number">25</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:53%;">
+                                                <span class="number">46</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:16%;">
+                                                <span class="number">14</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:0.022%;">
+                                                <span class="number">2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                        WP
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" style="width:36%;background:#dd4646"></div>
+                                            <div class="inner_bar_mini" style="width:46%;background:#215939"></div>
+                                            <div class="inner_bar_mini" style="width:18%;background:#528cbf"></div>
+                                            <div class="inner_bar_mini" style="width:4%;background: #64cef4"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:36%;">
+                                                <span class="number">239</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:46%;">
+                                                <span class="number">310</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:15%;">
+                                                <span class="number">101</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:0.034%;">
+                                                <span class="number">23</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="row ">
+                                <div class="col-md-2 province_bar_div" >
+                                        May n
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress_bar_div">
+                                        <div class="progress_bar">
+                                            <div class="inner_bar_mini" data-trigger="hover" data-toggle="popover" style="width:30%;background:red"></div>
+                                            <div class="inner_bar_mini" style="width:20%;background:blue"></div>
+                                            <div class="inner_bar_mini" style="width:20%;background:green"></div>
+                                            <div class="inner_bar_mini" style="width:30%;background:yellow"></div>
+                                        </div>
+                                        <div class="progress_bar_info">
+                                            <div class="inner_bar_info" style="width:30%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:20%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:20%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                                <div class="inner_bar_info" style="width:30%;">
+                                                <span class="number">246</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                 -->
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+                <div class="legend_div">
+                    <div class="legend_item">
+                        <div class="legend_color" style="background:#dd4646">
+                        </div>
+                        <div class="legend_text">
+                            नेकपा एमाले
+                        </div>
+                       
+                    </div>
+                    <div class="legend_item">
+                        <div class="legend_color" style="background:#215939">
+                        </div>
+                        <div class="legend_text">
+                            नेपाली कांग्रेस
+                        </div>
+                       
+                    </div>
+                    <div class="legend_item">
+                        <div class="legend_color" style="background:#528cbf">
+                        </div>
+                        <div class="legend_text">
+                            माओवादी केन्द्र
+                        </div>
+                    </div>
+                    <div class="legend_item">
+                        <div class="legend_color" style="background:#64cef4">
+                        </div>
+                        <div class="legend_text">
+                            स्वतन्त्र
+                        </div>
+        </div>
+    
+        <!-- <div class="container">
+                <h3>Popover Example</h3>
+                <a href="#" data-toggle="popover" title="Popover Header" data-content="<b>Some content inside the popover</b>">Toggle popover</a>
+              </div>
+              
+              <script>
+                $(document).ready(function(){
+                    $('[data-toggle="popover"]').popover(
+                        {
+                            'html':true,
+                            'trigger':'hover',
+                            'placement':'top'
+                        }
+                    );   
+                });
+              </script> -->
+ 
+    </body>
+  
+
+    <script>
+        // $('.inner_bar_mini').hover(function(){
+        //     Popper.createPopper(button, tooltip, {
+        //         placement: 'right',
+        //     });
+        // })
+
+        $(document).ready(function(){
+         
+        })
+
+    </script>
+  
+</html>

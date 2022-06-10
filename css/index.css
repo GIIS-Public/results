@@ -1,0 +1,169 @@
+.select-box {
+    background-color: #F5F5F5;
+    border: solid 1px #EAEFF6;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    }
+    
+    .select-box select {
+    background-color: transparent;
+    padding: 8px 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #696A6B;
+    width: 100%;
+    border: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    z-index: 3;
+    padding-right: 35px;
+    }
+    
+    .select-box:after {
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #000 transparent transparent transparent;
+    z-index: 2;
+    }
+
+    .main_row{
+        display: flex;
+        justify-content: center;
+        margin-top:1rem;
+    }
+    .overall_div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .overall_bar_div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .progress_bar{
+        background:#d4d4d4;
+        width: 100%;
+        display: flex;
+    }
+    .progress_bar_info{
+        width: 100%;
+        display: flex;
+    }
+    .inner_bar{
+        height: 9rem;
+    }
+    .inner_bar_mini{
+        height: 3rem;
+    }
+    .inner_bar_info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .inner_bar_info>.party_name{
+        font-size:19px;
+        margin-top:4px;
+    }
+    .inner_bar_info>.number{
+        font-size:15px
+    }
+    .progress_bar_div{
+        display: flex;
+        flex-direction: column;
+        width:100%
+    }
+    .nav>li{
+        background-color: transparent;
+        padding: 8px 10px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #696A6B !important; 
+        border: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        position: relative;
+        z-index: 3;
+    }
+    
+    .nav>li>a{
+        padding: 10px 28px !important;
+        color:#555;
+    
+    }
+    
+    .nav>li.active{
+        color: #f6c775;
+    }
+    
+    .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+        color: #555 !important;
+        background-color: #f6c775 !important;
+    }
+    .chart_actions{
+        display: flex;
+        grid-gap: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+    .chart_actions>h3{
+        font-size: 18px;
+    }
+    .provinces_div{
+        margin-top:5rem;
+    }
+    .province_bar_div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
+    }
+
+    .maintitle{
+        margin-bottom:1rem;
+    }
+    .subtitle{
+        margin-top:0px;
+        font-size:20px;
+    }
+
+    th,td{
+        vertical-align: middle !important;
+        font-size:20px;
+
+    }
+    .council_div{
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        grid-gap:20px
+    }
+    .legend_item{
+        display: flex;
+        grid-gap: 10px;
+        padding-bottom: 5px;
+    }
+    .legend_color{
+        height:16px;
+        width:16px;
+        align-items: center;
+    }
+    .legend_div{
+        border-radius: 4px;
+        padding: 17px;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+        width: 14rem;
+        margin-left: 20px;
+    }
