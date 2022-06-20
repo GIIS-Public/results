@@ -34,7 +34,7 @@
     }
 
     .main_row{
-        display: flex;
+        /* display: flex; */
         margin-top:1rem;
         padding-left:10px
     }
