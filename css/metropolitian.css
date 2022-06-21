@@ -34,7 +34,7 @@
     }
 
     .main_row{
-        /* display: flex; */
+        display: flex;
         margin-top:1rem;
         padding-left:10px
     }
@@ -66,8 +66,10 @@
     .inner_bar_mini{
         height: 3rem;
         display: flex;
-    justify-content: flex-end;
-    align-items: center;
+        justify-content: flex-end;
+        align-items: center;
+        color: white;
+        padding: 8px;
     }
     .inner_bar_info{
         display: flex;

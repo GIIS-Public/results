@@ -34,7 +34,7 @@
     }
 
     .main_row{
-        /* display: flex; */
+        display: flex;
         justify-content: center;
         margin-top:1rem;
     }
@@ -61,13 +61,21 @@
         display: flex;
     }
     .inner_bar{
-        height: 9rem;
+        height: 9rem;        
+        /* height: 3rem; */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color:#d4d4d4;
+        padding: 12px;
     }
     .inner_bar_mini{
         height: 3rem;
         display: flex;
-    justify-content: flex-end;
-    align-items: center;
+        justify-content: flex-end;
+        align-items: center;
+        color:white;
+        padding: 8px;
     }
     .inner_bar_info{
         display: flex;
